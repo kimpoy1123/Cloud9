@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cloud Nine Staycation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+  <!-- LOGO -->
+  <a href="#" class="logo"><img src="./media/cloud-logo.png" alt="Cloud Nine Staycation"></a>
+  <!-- MENU -->
+
+  <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <span>Menu</span>
+
+      <span class="hamburger">
+          <i></i>
+          <i></i>
+          <i></i>
+      </span>
+  </button>
+
+    <!-- CHECK AVAILABILITY -->
+
+    <a href="#booking" class="navbar-button">Check Availability</a>
+
+</header>
+
+<!-- =====================================================
+     DROPDOWN MENU
+===================================================== -->
+
+<div class="menu-dropdown" id="menuDropdown">
+
+  <nav>
+
+      <a href="#about">
+          About
+      </a>
+
+      <a href="#gallery">
+          Gallery
+      </a>
+
+      <a href="#amenities">
+          Amenities
+      </a>
+
+      <a href="#pricing">
+          Pricing
+      </a>
+
+      <a href="#location">
+          Location
+      </a>
+
+      <a href="#faq">
+          FAQ
+      </a>
+
+      <a href="#booking">
+          Contact / Booking
+      </a>
+
+  </nav>
+
+</div>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+  <!-- ===============================================
+        LEFT SIDE
+  ================================================ -->
+
+  <div class="hero-content">
+
+    <div class="hero-inner">
+        <p class="eyebrow">YOUR NEXT STAY</p>
+        <h1> Lorem ipsum,<br>dolor sit amet<br>elit est id<span>.</span></h1>
+        <p class="hero-description">Quisque eu est vitae justo elementum auctor. Maecenas condimentum nisi sed commodo lacinia. Pellentesque dui urna, luctus sed mauris id, semper commodo dolor</p>
+        <p class="price">From ₱1,800/night</p>
+
+        <a href="#booking" class="availability-button">
+          <span> Check Availability </span>
+          <span class="arrow"> →</span>
+        </a>
+    </div>
+
+    <!-- ===========================================
+          TESTIMONIAL
+    ============================================ -->
+
+    <div class="testimonial">
+      <div class="testimonial-top">
+        <div class="avatars">
+          <div>👨🏻</div>
+          <div>👩🏻</div>
+          <div>👨🏽</div>
+          <div>👩🏻</div>
+        </div>
+        <div>
+          <div class="stars"> ★★★★★</div>
+          <strong> Loved by 500+ happy guests</strong>
+        </div>
+      </div>
+        <p class="quote">"lorem ipsum dolor sit amet consectetur"</p>
+      <p class="guest-name"> Guest Review</p>
+    </div>
+  </div>
+
+  <!-- ===============================================
+        RIGHT SIDE IMAGE GALLERY
+  ================================================ -->
+
+  <div class="hero-gallery" id="gallery">
+
+      <!-- MAIN IMAGE -->
+       
+      <img
+          id="mainImage"
+          class="main-image"
+          src="./media/1.jpg"
+          alt="Television"
+      >
+
+
+      <!-- DARK OVERLAY -->
+
+      <div class="image-overlay"></div>
+
+
+      <!-- THUMBNAILS -->
+
+      <div class="thumbnails">
+
+
+          <button
+              class="thumbnail active"
+              data-image="./media/2.jpg"
+          >
+
+              <img
+                  src="./media/2.jpg"
+                  alt="Room view"
+              >
+
+          </button>
+
+
+          <button
+              class="thumbnail"
+              data-image="./media/3.jpg"
+          >
+
+              <img
+                  src="./media/3.jpg"
+                  alt="Bedroom"
+              >
+
+          </button>
+
+
+          <button
+              class="thumbnail"
+              data-image="./media/4.jpg"
+          >
+
+              <img
+                  src="./media/4.jpg"
+                  alt="Living area"
+              >
+
+          </button>
+
+
+      </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEXT SECTION
+===================================================== -->
+
+<section
+    class="content-section"
+    id="about"
+>
+
+    <p class="section-label">
+        ABOUT CLOUD NINE
+    </p>
+
+    <h2>
+        Orci varius natoque penatibus
+    </h2>
+
+    <p class="section-text">
+
+        et magnis dis parturient montes, nascetur ridiculus mus. Cras pretium ac odio id lacinia. Curabitur nec ultrices nibh, id placerat mi. Aenean facilisis ipsum vitae erat porta, eget molestie ipsum pharetra. Nulla luctus velit vel magna molestie scelerisque. Vivamus sed congue elit. Etiam ac cursus risus.
+
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     AMENITIES
+===================================================== -->
+
+<section
+    class="content-section"
+    id="amenities"
+>
+
+    <p class="section-label">
+        AMENITIES
+    </p>
+
+    <h2>
+        Proin lobortis nunc sed diam mattis finibus. Vestibulum non dolor
+    </h2>
+
+</section>
+
+
+<!-- =====================================================
+     PRICING
+===================================================== -->
+
+<section
+    class="content-section"
+    id="pricing"
+>
+
+    <p class="section-label">
+        PRICING
+    </p>
+
+    <h2>
+        Vestibulum sit amet mi ac massa feugiat bibendum
+    </h2>
+
+</section>
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section
+    class="content-section"
+    id="location"
+>
+
+    <p class="section-label">
+        LOCATION
+    </p>
+
+    <h2>
+        Pellentesque quis maximus orci. In hac habitasse platea dictumst
+    </h2>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="faq-section" id="faq">
+
+    <!-- FAQ HEADER -->
+
+    <div class="faq-header">
+
+        <div class="faq-label">
+            FAQ
+        </div>
+
+        <h2>
+            Frequently<br>
+            asked questions
+        </h2>
+
+        <p>
+            Everything you need to know<br>
+            before planning your stay.
+        </p>
+
+    </div>
+
+
+    <!-- FAQ LIST -->
+
+    <div class="faq-list">
+
+
+        <!-- FAQ ITEM 1 -->
+
+        <div class="faq-item active">
+
+            <button class="faq-question">
+
+                <span>
+                    Do you offer direct booking?
+                </span>
+
+                <span class="faq-icon">
+                    ×
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes, you can book directly with us
+                    through our ________.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ ITEM 2 -->
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    What are the check-in and check-out timings?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Check-in starts at 2:00 PM and
+                    check-out is until 12:00 PM.
+                    Early check-in or late check-out
+                    may be available upon request.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ ITEM 3 -->
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    Is food available at Cloud Nine?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Guests are welcome to order food
+                    through nearby restaurants and
+                    delivery services. You may also
+                    prepare your own food in the room.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ ITEM 4 -->
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    Is parking available?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Parking availability depends on
+                    the available slots in the building.
+                    Please contact us before your stay
+                    if you require parking.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ ITEM 5 -->
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I book the entire property?
+                </span>
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Currently, Cloud Nine offers the
+                    individual condominium unit for
+                    private stays.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING
+===================================================== -->
+
+<section
+    class="content-section booking-section"
+    id="booking"
+>
+
+    <p class="section-label">
+        BOOK YOUR STAY
+    </p>
+
+    <h2>
+        Ready for your
+        next stay?
+    </h2>
+    <br>
+   <a href="#booking"class="availability-button">
+    <span>Check Availability</span>
+  </a>
+
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
