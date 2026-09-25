@@ -1,18 +1,12 @@
-/* =====================================================
-   CLOUD NINE STAYCATION
-   GLOBAL
-===================================================== */
-
+/*==GLOBAL SETTING==*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: "DM Sans", sans-serif;
     color: #164b57;
@@ -23,15 +17,75 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 button {
     font-family: inherit;
 }
 
+/*======LOADING SCREEN===== */
 
-/* =====================================================
-   COLOR VARIABLES
-===================================================== */
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eefbfd;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+/* Logo */
+.loading-logo {
+    width: 220px;
+
+    opacity: 0;
+    transform: translateY(20px) scale(0.92);
+
+    animation: logoIntro 1.2s ease forwards;
+}
+
+.loading-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    /* Useful if your logo image has a white background */
+    mix-blend-mode: multiply;
+}
+
+/* Logo entrance */
+@keyframes logoIntro {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.92);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-3px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Loading screen disappears */
+#loading-screen.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ===COLOR VARIABLES=== */
 
 :root {
     --cloud-white: #ffffff;
@@ -54,9 +108,7 @@ button {
 }
 
 
-/* =====================================================
-   NAVBAR
-===================================================== */
+/* =====NAVBAR======= */
 
 .navbar {
 
@@ -92,9 +144,7 @@ button {
 }
 
 
-/* =====================================================
-   NAVBAR AFTER SCROLL
-===================================================== */
+/*NAVBAR AFTER SCROL */
 
 .navbar.scrolled {
 
@@ -111,9 +161,7 @@ button {
 }
 
 
-/* =====================================================
-   LOGO
-===================================================== */
+/* ==LOGO==== */
 
 .logo {
 
@@ -133,19 +181,11 @@ button {
 
     display: block;
 
-    /*
-       Your current logo has a white background.
-       Multiply helps the white area blend with
-       the pale Cloud Nine navbar.
-    */
-
     mix-blend-mode: multiply;
 }
 
 
-/* =====================================================
-   MENU BUTTON
-===================================================== */
+/* ===== MENU BUTTON==== */
 
 .menu-button {
 
@@ -176,9 +216,7 @@ button {
 }
 
 
-/* =====================================================
-   HAMBURGER
-===================================================== */
+/* ===== HAMBURGER======= */
 
 .hamburger {
 
@@ -206,9 +244,7 @@ button {
 }
 
 
-/* =====================================================
-   NAVBAR CHECK AVAILABILITY
-===================================================== */
+/* =++++NAVBAR CHECK AVAILABILITY==== */
 
 .navbar-button {
 
@@ -243,9 +279,7 @@ button {
 }
 
 
-/*
-   Button appears after scrolling
-*/
+/*Button appears after scrolling*/
 
 .navbar.scrolled .navbar-button {
 
@@ -257,9 +291,7 @@ button {
 }
 
 
-/* =====================================================
-   DROPDOWN MENU
-===================================================== */
+/* ====DROPDOWN MENU=========== */
 
 .menu-dropdown {
 
@@ -334,9 +366,7 @@ button {
 }
 
 
-/* =====================================================
-   HERO
-===================================================== */
+/* ==== HERO====== */
 
 .hero {
 
@@ -356,9 +386,7 @@ button {
 }
 
 
-/* =====================================================
-   DECORATIVE CLOUDS
-===================================================== */
+/* ====DECORATIVE CLOUDS===== */
 
 .hero::before {
 
@@ -406,9 +434,9 @@ button {
 }
 
 
-/* =====================================================
-   LEFT HERO
-===================================================== */
+/* +++++++++++
+    LEFT HERO
++++++++++++++*/
 
 .hero-content {
 
@@ -432,9 +460,7 @@ button {
 }
 
 
-/* =====================================================
-   HERO INNER
-===================================================== */
+/*HERO INNER*/
 
 .hero-inner {
 
@@ -442,9 +468,7 @@ button {
 }
 
 
-/* =====================================================
-   EYEBROW
-===================================================== */
+/*EYEBROW*/
 
 .eyebrow {
 
@@ -480,9 +504,7 @@ button {
 }
 
 
-/* =====================================================
-   MAIN TITLE
-===================================================== */
+/*MAIN TITLE */
 
 .hero h1 {
 
@@ -508,10 +530,7 @@ button {
 
 }
 
-
-/* =====================================================
-   DESCRIPTION
-===================================================== */
+/*DESCRIPTION= */
 
 .hero-description {
 
@@ -524,28 +543,30 @@ button {
     color: var(--text-gray);
 
     margin-bottom: 27px;
+    background-color: transparent; 
+    transition: all 0.3s ease;
 }
 
+.hero-description.location:hover{
+    font-size: 20px;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px 10px rgba(53, 174, 192, 0.28);
+    border-radius: 30%;
 
-/* =====================================================
-   PRICE
-===================================================== */
+}
+
+/*PRICE */
 
 .price {
-
-    font-size: 16px;
-
-    font-weight: 600;
-
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600px;
     color: var(--dark-teal);
-
-    margin-bottom: 14px;
+    margin: 20px 20px;
 }
 
 
-/* =====================================================
-   MAIN CTA
-===================================================== */
+/*MAIN CTA*/
 
 .availability-button {
 
@@ -604,9 +625,7 @@ button {
 }
 
 
-/* =====================================================
-   TESTIMONIAL
-===================================================== */
+/* TESTIMONIAL Box */
 
 .testimonial {
 
@@ -641,10 +660,6 @@ button {
 }
 
 
-/* =====================================================
-   AVATARS
-===================================================== */
-
 .avatars {
 
     display: flex;
@@ -678,11 +693,6 @@ button {
     margin-left: 0;
 }
 
-
-/* =====================================================
-   STARS
-===================================================== */
-
 .stars {
 
     color: #f2b84b;
@@ -702,10 +712,6 @@ button {
     color: var(--dark-teal);
 }
 
-
-/* =====================================================
-   QUOTE
-===================================================== */
 
 .quote {
 
@@ -729,9 +735,10 @@ button {
 }
 
 
-/* =====================================================
-   RIGHT IMAGE GALLERY
-===================================================== */
+
+/* +++++++++++
+    RIGHT HERO
++++++++++++++*/
 
 .hero-gallery {
 
@@ -748,9 +755,7 @@ button {
 }
 
 
-/* =====================================================
-   MAIN IMAGE
-===================================================== */
+/* MAIN IMAGE */
 
 .main-image {
 
@@ -774,9 +779,7 @@ button {
 }
 
 
-/* =====================================================
-   IMAGE OVERLAY
-===================================================== */
+/*IMAGE OVERLAY */
 
 .image-overlay {
 
@@ -796,9 +799,7 @@ button {
 }
 
 
-/* =====================================================
-   THUMBNAILS
-===================================================== */
+/* THUMBNAILS*/
 
 .thumbnails {
 
