@@ -1,6 +1,16 @@
-/* =====================================================
-   NAVBAR
-===================================================== */
+/*Loading Screen */
+document.addEventListener("DOMContentLoaded", () => {
+
+    const loadingScreen = document.getElementById("loading-screen");
+
+    
+    setTimeout(() => {
+        loadingScreen.classList.add("hide");
+    }, 2200);
+});
+
+
+/* NAVBAR*/
 
 const navbar = document.getElementById("navbar");
 
@@ -19,9 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* =====================================================
-   DROPDOWN MENU
-===================================================== */
+/*DROPDOWN MENU */
 
 const menuButton = document.getElementById("menuButton");
 
@@ -36,9 +44,7 @@ menuButton.addEventListener("click", () => {
 });
 
 
-/* =====================================================
-   CLOSE MENU WHEN LINK IS CLICKED
-===================================================== */
+/* CLOSE MENU WHEN LINK IS CLICKED */
 
 const menuLinks =
     menuDropdown.querySelectorAll("a");
@@ -55,9 +61,7 @@ menuLinks.forEach(link => {
 });
 
 
-/* =====================================================
-   IMAGE GALLERY
-===================================================== */
+/* IMAGE GALLERY RIGHT-SIDE HERO */
 
 const mainImage =
     document.getElementById("mainImage");
@@ -108,9 +112,7 @@ thumbnails.forEach(thumbnail => {
     });
 
 });
-/* =====================================================
-   FAQ ACCORDION
-===================================================== */
+/*FAQ ACCORDION */
 
 const faqItems = document.querySelectorAll(".faq-item");
 
